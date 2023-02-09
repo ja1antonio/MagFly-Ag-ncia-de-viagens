@@ -20,8 +20,9 @@
   --color-text: hsl(240, 1%, 48%);
   --border-color: hsl(0, 0%, 83%);
   --color-white-deam: hsl(0, 0%, 93%);
-  --color-grey-bg: hsl(225, 50%, 48%);
-  --color-grey-text: hsl(225, 50%, 48%);
+  --grey-bg: hsl(0, 0%, 96%);
+  --grey-text: rgb(145, 145, 145);
+  --inputColor: hsl(330, 12%, 97%)
   --box-shadow: box-shadow:rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px ;
   --transition: .4s ease-in-out;
 
@@ -237,5 +238,143 @@ h2 {
    }
   }
 
+  .navbar_White_Bg {
+    background: var(--color-second);
+    padding: .5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    ;
+  }
+
 }
 
+// Home Section Styling
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+
+  .mainText {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2.5rem;
+  }
+
+  .homeImages {
+    width: 100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5rem;
+
+    .videoDiv {
+      width: 100%;
+      .video {
+        border-radius: 10rem;
+
+      }
+
+    }
+    .plane {
+      position: absolute;
+      width: 100%;
+      top: -30%;
+    }
+
+  }
+}
+
+// Search Section Styling
+
+.search {
+
+  .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--grey-bg);
+  border-radius: 16px;
+  row-gap: 2rem;
+
+    .btns {
+      background: var(--color-second);
+      padding: .5rem;
+      border-radius: 1rem;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+
+      .singleBtn{
+        padding: .8rem 1.5rem;
+        font-size: 13px;
+        border-radius: 3rem;
+        width: 80%;
+        text-align: center;
+
+        &:hover {
+          background: var(--color-primary);
+          color: var(--color-white);
+          font-weight: 500;
+          transition: .3s ease;
+        }
+
+      }
+      .active {
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-weight: 500;
+   
+
+      }
+    }
+
+    .searchInputs{
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .singleInput {
+        .iconDiv{
+          padding: 16px 16px;
+          border-radius: 3rem;
+          background: var(--color-second);
+          margin-right: 1rem;
+
+          .icon{
+            color: var(--color-black);
+            opacity: .7;
+          }
+        }
+        .texts {
+          h4 {
+            padding-top: 0;
+            padding-bottom: .7rem;
+            color: var(--color-black);
+            font-weight: 700;
+          }
+
+          input {
+            width: 95%;
+            border: none;
+            outline: none;
+            background: transparent;
+
+            &::placeholder{
+              font-size: 12px;
+              opacity: .5;
+            }
+          }
+
+        }
+
+      }
+    }
+
+
+}
+
+}

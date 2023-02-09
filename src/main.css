@@ -17,8 +17,9 @@
   --color-text: hsl(240, 1%, 48%);
   --border-color: hsl(0, 0%, 83%);
   --color-white-deam: hsl(0, 0%, 93%);
-  --color-grey-bg: hsl(225, 50%, 48%);
-  --color-grey-text: hsl(225, 50%, 48%);
+  --grey-bg: hsl(0, 0%, 96%);
+  --grey-text: rgb(145, 145, 145);
+  --inputColor: hsl(330, 12%, 97%)
   --box-shadow: box-shadow:rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px ;
   --transition: .4s ease-in-out;
 }
@@ -199,4 +200,111 @@ h2 {
 .navBar .navBarTwo .removeNavBar {
   right: -50%;
   transition: 0.5s ease-in-out;
+}
+.navBar .navbar_White_Bg {
+  background: var(--color-second);
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+.home .mainText {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2.5rem;
+}
+.home .homeImages {
+  width: 100%;
+  margin: 1rem auto 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+}
+.home .homeImages .videoDiv {
+  width: 100%;
+}
+.home .homeImages .videoDiv .video {
+  border-radius: 10rem;
+}
+.home .homeImages .plane {
+  position: absolute;
+  width: 100%;
+  top: -30%;
+}
+
+.search .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--grey-bg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.search .sectionContainer .btns {
+  background: var(--color-second);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.search .sectionContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.search .sectionContainer .btns .singleBtn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.search .sectionContainer .btns .active {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+}
+.search .sectionContainer .searchInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv {
+  padding: 16px 16px;
+  border-radius: 3rem;
+  background: var(--color-second);
+  margin-right: 1rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+  color: var(--color-black);
+  opacity: 0.7;
+}
+.search .sectionContainer .searchInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
