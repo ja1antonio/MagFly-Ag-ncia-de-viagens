@@ -26,7 +26,7 @@ const Info = () => {
             </p>
           </div>
           <div className="singleCard grid">
-            <div className="iconDiv flex">
+            <div className="iconDiv flex colorOne">
               <BsShieldCheck className="icon" />
             </div>
             <span className="cardTitle">Smart Checklist</span>
@@ -36,7 +36,7 @@ const Info = () => {
             </p>
           </div>
           <div className="singleCard grid">
-            <div className="iconDiv flex">
+            <div className="iconDiv flex colorTwo">
               <BsBookmarkCheck className="icon" />
             </div>
             <span className="cardTitle">Save More</span>
