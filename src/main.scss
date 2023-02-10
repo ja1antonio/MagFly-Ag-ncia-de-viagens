@@ -119,7 +119,6 @@ h2 {
 }
 
 //navBar Section Styling
-
 .navBar {
   position: fixed;
   flex-direction: column;
@@ -249,7 +248,6 @@ h2 {
 }
 
 // Home Section Styling
-
 .home {
   padding-top: 10rem;
   text-align: center;
@@ -289,7 +287,6 @@ h2 {
 }
 
 // Search Section Styling
-
 .search {
 
   .sectionContainer {
@@ -376,5 +373,84 @@ h2 {
 
 
 }
+
+}
+
+// Support Section Styling
+.support {
+  .sectionContainer {
+    .tittleDiv {
+      text-align: center;
+      small {
+        letter-spacing: .8rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: var(--color-black);
+        line-height: 1.5rem;
+      }
+
+    }
+
+    .infoDiv {
+      margin-top: 2rem;
+      gap: 1.5rem;
+
+
+      .textDiv {
+        gap: 1.5rem;
+
+        .singleInfo {
+          .number {
+            background: var(--color-primary);
+            padding: 5px 12px;
+            width: 40px;
+            border-radius: 3rem;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--color-white);
+              
+          }
+          .colorOne{
+            background: var(--color-one);
+                
+          }
+          .colorTwo{
+            background: var(--color-two);
+                
+          }
+        }
+      }
+      .imgDiv {
+        margin: auto;
+        img {
+          width: 100%;
+          max-width: 420px;
+        }
+      }
+    }
+  }
+
+}
+
+// Info Section Styling
+.info {
+  background: var(--color-second);
+  .infoContainer {
+    .titleDiv {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+      justify-content: space-between;
+  
+    }
+
+    .cardsDiv {
+      gap: 1.5rem;
+      margin-top: 3rem;
+
+    }
+    
+  }
 
 }
