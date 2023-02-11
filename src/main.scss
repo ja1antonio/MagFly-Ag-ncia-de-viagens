@@ -533,6 +533,7 @@ h2 {
 
 // Travelers Section Styling
 .travelers {
+
   .sectionContainer {
     text-align: center;
 
@@ -641,4 +642,39 @@ h2 {
 
     }
   }
-}}
+ }
+}
+
+// Subscribe Section Styling
+.subscribe {
+  background: var(--color-second);
+
+  .sectionContainer{
+    text-align: center;
+    .inputDiv{
+      margin-top: 1rem;
+      flex-direction: column;
+      background: var(--color-white);
+      border-radius: 1rem;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1rem .5rem;
+
+        &:placeholder {
+          font-size: 13px;
+          opacity: .5;
+        }
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+// Footer Section Styling
