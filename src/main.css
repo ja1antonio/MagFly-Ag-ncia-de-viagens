@@ -396,4 +396,22 @@ h2 {
 }
 .info .infoContainer .cardsDiv .singleCard .colorTwo {
   background: var(--color-two);
+}
+
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 100%;
+  max-width: 430px;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
