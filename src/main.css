@@ -236,7 +236,7 @@ h2 {
 .home .homeImages .plane {
   position: absolute;
   width: 100%;
-  top: -30%;
+  top: -10%;
 }
 
 .search .sectionContainer {
@@ -671,11 +671,179 @@ h2 {
   .home .homeImages .videoDiv .video {
     height: 100%;
     width: 100%;
-    border-radius: 15rem;
-    margin-top: 5rem;
+    border: 15rem;
   }
   .home .homeImages .plane {
-    width: 95%;
+    width: 100%;
     top: -8%;
+  }
+  .search .sectionContainer .btn {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .sectionContainer {
+    padding-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .navBar {
+    align-items: center;
+  }
+  .navBar .navBarOne .none {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .navBar .navBarOne .none li {
+    font-size: 13px;
+    gap: 0.5rem;
+    color: var(--color-text);
+  }
+  .navBar .navBarOne .none li:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  .navBar .navBarTwo {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBar .navBarTwo .logoDiv .Logo {
+    max-width: 20%;
+  }
+  .navBar .navBarTwo .menu {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--color-text);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .menu .listItem:hover {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .btnOne, .navBar .navBarTwo .toggleIcon {
+    display: none;
+  }
+  .search .sectionContainer .btns {
+    width: 70%;
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .input {
+    width: 100%;
+  }
+  .support .sectionContainer .infoDiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info .infoContainer {
+    padding: 0 6rem;
+  }
+  .info .infoContainer .titleDiv {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  .info .infoContainer .cardsDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .info .infoContainer .cardsDiv .singleCard {
+    max-width: 260px;
+    padding: 3rem 1rem;
+  }
+  .lounge .sectionContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .lounge .sectionContainer .textDiv {
+    grid-area: 1;
+  }
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .home {
+    padding-top: 13rem;
+  }
+  .home .mainText {
+    width: 70%;
+    padding-bottom: 1.5rem;
+    font-size: 22px;
+    line-height: 4rem;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .navBar .navBarOne, .navBar .navBarTwo {
+    padding: 1.5rem 5rem;
+  }
+  .navBar .navbar_White_Bg {
+    padding: 0 5rem;
+  }
+  .home .mainText {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImages .videoDiv {
+    width: 90%;
+    height: 300px;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15rem;
+  }
+  .home .homeImages .plane {
+    width: 100%;
+    top: -10%;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
