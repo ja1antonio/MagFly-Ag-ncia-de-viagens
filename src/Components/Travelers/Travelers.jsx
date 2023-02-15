@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // imported Destination images
 import ImgParis from '../../assets/Paris.jpg';
@@ -11,6 +11,10 @@ import travelersOne from '../../assets/travelerOne.jpg';
 import travelersTwo from '../../assets/travelerTwo.jpg';
 import travelersthree from '../../assets/travelerthree.jpg';
 import travelersFour from '../../assets/travelerfour.jpg';
+
+//Import AOS
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 //Array method called Map diplay all the data
 
@@ -47,10 +51,17 @@ const travelers = [
 ];
 
 const Travelers = () => {
+  //UseEffect Animation
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="travelers container section">
       <div className="sectionContainer">
-        <h2>Top travelers of this month</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">
+          Top travelers of this month
+        </h2>
 
         <div className="travelersContainer grid">
           {travelers.map(
@@ -63,7 +74,12 @@ const Travelers = () => {
             }) => {
               return (
                 /* SINGLE TRAVELERS CARD */
-                <div key={id} className="singleTraveler">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="2500"
+                  key={id}
+                  className="singleTraveler"
+                >
                   <img src={destinationImage} className="destinationImage" />
 
                   <div className="travelerDetails">

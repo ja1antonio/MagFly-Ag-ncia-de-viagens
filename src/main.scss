@@ -268,6 +268,7 @@ h2 {
     align-items: center;
     position: relative;
     border-radius: 5rem;
+   
 
     .videoDiv {
       width: 100%;
@@ -819,7 +820,7 @@ h2 {
 
 }
     
-  @media screen and (min-width:570px ) {
+@media screen and (min-width:570px ) {
   //Home
   .home {
     .mainText{
@@ -1279,7 +1280,7 @@ h2 {
 @media  screen and (min-width:1660px) {
 
   p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
  
   }
@@ -1303,7 +1304,8 @@ h2 {
   .home {
   
     .mainText{
-      width: 100%;
+      width: 50%;
+
 
     }
     .homeImages{
@@ -1366,14 +1368,33 @@ h2 {
           }
         }
       }
-    }
-  
-  
 
-  
-
+      .info {
+        .infoContainer {
+          .titleDiv {
  
+       
+       
+            justify-content: center;
 
+            h2 {
+              width: 100%;
+              text-align: center;
+              align-content: center;
+
+              margin: auto;
+            }
+            .btn {
+              width: 50%;
+            }
+          }
+
+        }
+      }
+
+ }
+  
+  
 
 
 ::selection{

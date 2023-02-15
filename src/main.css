@@ -893,7 +893,7 @@ h2 {
 }
 @media screen and (min-width: 1660px) {
   p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
   }
   h4 {
@@ -907,7 +907,7 @@ h2 {
     margin: auto;
   }
   .home .mainText {
-    width: 100%;
+    width: 50%;
   }
   .home .homeImages .videoDiv {
     width: 90%;
@@ -940,6 +940,18 @@ h2 {
   .support .sectionContainer .infoDiv .imgDiv .img {
     width: 100%;
     align-items: center;
+  }
+  .info .infoContainer .titleDiv {
+    justify-content: center;
+  }
+  .info .infoContainer .titleDiv h2 {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+  }
+  .info .infoContainer .titleDiv .btn {
+    width: 50%;
   }
 }
 ::-moz-selection {
