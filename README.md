@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto 
 
-* [MAGHAT](https://mag-fly-agencia-de-viagens-ja1antonio.vercel.app/)
+* [MAGFLY](https://mag-fly-agencia-de-viagens-ja1antonio.vercel.app/)
 
 Esse é um Projeto Front-End **Landing Page Reponsiva em React.js** Foi criada para apresentar um pouco mais sobre a agência **MAGFLY**
 
